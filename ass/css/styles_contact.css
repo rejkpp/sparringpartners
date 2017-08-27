@@ -539,7 +539,7 @@ header i {
 .hero-footer{
   width: 100%;
   position: absolute;
-  bottom: 31px;
+  bottom: 0px;
 }
 /* ==========================================================================
 contact
