@@ -504,7 +504,7 @@ Hero
 .hero h1 {
     font-weight: 300;
     font-size: 3rem;
-    background-color: rgba(255, 255, 255, 0.31);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 .hero {
     width: 100%;
