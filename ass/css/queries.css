@@ -46,21 +46,12 @@
 	  bottom: 0px;
 		right:0px;
 	}
-	.hero h1 {
-	    background-color: rgba(255, 255, 255, 0.31);
-	}
 }
 @media screen and (min-width: 768px){
 	.hero-footer{
-		width: 67%;
+		width: 65%;
 	}
 	#contact-info {
-	  border-radius: 5px;
-	  width: 50%;
-	}
-}
-@media screen and (min-width: 1920px){
-	.hero-footer{
-		width: 65%;
+	  width: 51%;
 	}
 }
