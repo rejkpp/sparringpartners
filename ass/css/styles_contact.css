@@ -457,16 +457,28 @@ a:hover, a:focus {
 }
 
 /* ==========================================================================
+flex
+========================================================================== */
+.flex{
+  height: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ==========================================================================
 Buttons
 ========================================================================== */
 .use-btn {
     display: inline-block;
-    margin: 0 10px 10px 0;
+    /*margin: 0 10px 10px 0;*/
     padding: 20px 50px;
     border-radius: 3px;
     background-color: #fff;
     color: #204497;
     font-size: 16px;
+    border: 1px #204497 solid;
 }
 .use-btn:hover, .use-btn:focus {
     background-color: #204497;
@@ -477,26 +489,21 @@ Buttons
 /* ==========================================================================
 Hero
 ========================================================================== */
+
+.hero-container{
+  height: 50vh;
+}
 .hero {
     position: relative;
     padding: 60px 0 60px 0;
     min-height: 100vh;
-    background: rgb(32, 68, 151) url('../img/hero-01.jpg') no-repeat center center;
+    background: url('../img/fano_hero_1920x1080.jpg') no-repeat right center;
     background-size: cover;
     color: #204497;
 }
 .hero h1 {
-    margin: 200px 0 45px 0;
     font-weight: 300;
-    font-size: 45px;
-}
-.hero h1 span {
-    display: inline-block;
-    color: #a1a9b0;
-}
-#home {
-    width: 100%;
-    height: 100%;
+    font-size: 3rem;
 }
 .hero {
     width: 100%;
@@ -505,327 +512,9 @@ Hero
 header i {
     margin-left: 5px
 }
-
-/* ==========================================================================
-Video
-========================================================================== */
-section.video i {
-    margin-right: 10px;
-    color: #323a45;
-    vertical-align: middle;
-    font-size: 50px;
-    -webkit-transition: color 300ms ease-in-out;
-    transition: color 300ms ease-in-out;
+.hero-content{
+  height: 100%;
 }
-section.video h1 {
-    font-weight: 400;
-    font-size: 20px;
-}
-section.video {
-    padding: 60px 0;
-    background-color: #f6f7f9;
-}
-section.video a {
-    color: #323a45
-}
-section.video a:hover, section.video a:focus {
-    color: #73d0da;
-    text-decoration: none;
-}
-section.video a:hover i, section.video a:focus i {
-    color: #73d0da
-}
-
-/* ==========================================================================
-Custom Slider Controls (Flickity)
-========================================================================== */
-.flickity-page-dots .dot {
-    width: 13px;
-    height: 13px;
-    opacity: 1;
-    background: transparent;
-    border: 2px solid white;
-    -webkit-transition: background 0.3s;
-    transition: background 0.3s;
-}
-.flickity-page-dots .dot.is-selected {
-    background: white;
-}
-
-/* ==========================================================================
-services Slider
-========================================================================== */
-.services-bg {
-    position: relative;
-    min-height: 400px;
-    background: url('../img/services-intro-01.jpg') no-repeat center center;
-    background-size: cover;
-}
-.services-img {
-    width: 100%;
-    height: 400px;
-    text-align: center;
-    line-height: 400px;
-}
-.services-slider {
-    position: relative;
-    padding: 5%;
-    background-color: #3F6184;
-}
-.services-slider ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.services-slider ul li {
-    width: 100%;
-}
-.services-slider li h1 {
-    margin-bottom: 15px;
-    color: #fff;
-    font-weight: 400;
-    font-size: 22px;
-}
-.services-slider li p {
-    color: #fff;
-    font-size: 14px;
-}
-.services-intro-img {
-    position: relative
-}
-.slides li h1 {
-    margin: 0;
-    padding: 0;
-}
-.services-slider .flickity-page-dots {
-    text-align: left;
-    margin-top: 50px;
-    position: static;
-}
-.services-slider .flickity-page-dots .dot {
-    margin: 0 12px 0 0;
-}
-
-/* ==========================================================================
-services List
-========================================================================== */
-.services-list {
-    padding: 130px 0
-}
-.services-list h1 {
-    margin: 0 0 10px 0;
-    padding: 0;
-    color: #24374b;
-    font-size: 20px;
-}
-.services-list p {
-    margin-bottom: 20px;
-    color: #778899;
-}
-.feature-content {
-    display: inline-block;
-    margin-left: 0;
-    width: 65%;
-}
-.feature-icon {
-    display: inline-block;
-    margin-right: 25px;
-    width: 90px;
-    height: 90px;
-    border: solid 2px #4e9ba3;
-    border-radius: 50%;
-    vertical-align: top;
-    text-align: center;
-    font-size: 25px;
-    line-height: 90px;
-}
-.feature-icon i {
-    color: #4e9ba3
-}
-
-/* ==========================================================================
-Blockquote
-========================================================================== */
-blockquote {
-    margin: 40px 0 0;
-    padding: 0;
-    border: none;
-}
-blockquote p {
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    width: 70%;
-    vertical-align: top;
-    font-style: italic;
-}
-blockquote .avatar {
-    display: inline-block;
-    margin-right: 20px;
-    width: 64px;
-    height: 64px;
-    vertical-align: middle;
-}
-blockquote .logo-quote {
-    display: inline-block;
-    margin: 0 0 0 90px;
-}
-
-/* ==========================================================================
-Showcase
-========================================================================== */
-.showcase {
-    background: url('../img/showcase-bg-fixed-01.jpg') no-repeat center center fixed;
-    background-size: cover;
-}
-.showcase h1 {
-    margin: 0 0 20px 0;
-    color: #fff;
-    font-weight: 400;
-    font-size: 22px;
-}
-.showcase p {
-    margin-bottom: 25px;
-    color: #fff;
-}
-.device {
-    position: absolute;
-    top: -60px;
-    left: 20%;
-    min-height: 676px;
-    width: 359px;
-    background: url('../img/iphone-skeleton.png') no-repeat center center;
-}
-.device-content {
-    position: absolute;
-    top: 115px;
-    left: 56px;
-    width: 247px;
-    height: 445px;
-    background: rgba(0, 0, 0, 0.3);
-}
-.device-content img {
-    width: 247px;
-    height: 445px;
-}
-.showcase-wrap {
-    position: relative;
-    padding: 100px 0;
-    min-height: 600px;
-}
-.showcase-slider ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.showcase-slider .flickity-page-dots {
-    bottom: 20px;
-}
-
-/* ==========================================================================
-team Intro
-========================================================================== */
-.team-intro {
-    padding: 170px 0 100px 0;
-    background-color: #f6f7f9;
-}
-.team-intro h1 {
-    margin-bottom: 20px;
-    color: #24374b;
-    font-weight: 400;
-    font-size: 22px;
-}
-.team-intro p {
-    margin-bottom: 25px;
-    color: #778899;
-}
-
-/* ==========================================================================
-team
-========================================================================== */
-.team ul {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-.team ul li {
-    float: left;
-    min-height: 100%;
-    width: 25%;
-    background-color: #000;
-    list-style: none;
-}
-.team figure {
-    position: relative;
-    overflow: hidden;
-}
-.team figure img {
-    width: 100%;
-    height: 100%;
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-}
-.team figure:hover img, .team figure:focus img {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
-.team figcaption {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 25% 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(63, 97, 132, 0.85);
-    text-align: center;
-    font-size: 15px;
-    opacity: 0;
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-}
-.team figcaption a {
-    color: #fff
-}
-.team figcaption a:hover, .team figcaption a:focus {
-    color: #73d0da
-}
-.team figure:hover figcaption, .team figure:focus figcaption {
-    opacity: 1
-}
-.visible {
-    opacity: 1
-}
-.team figure.cs-hover figcaption {
-    opacity: 1
-}
-.team figcaption i {
-    font-size: 35px
-}
-.team figcaption p {
-    margin-bottom: 0;
-    text-transform: uppercase;
-    font-weight: 400;
-}
-.team figcaption .caption-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -40px;
-    margin-left: -100px;
-    width: 200px;
-    -webkit-transform: translate(0px, 15px);
-    -ms-transform: translate(0px, 15px);
-    transform: translate(0px, 15px);
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-}
-.team figure:hover figcaption .caption-content, .team figure:focus figcaption .caption-content {
-    -webkit-transform: translate(0px, 0px);
-    -ms-transform: translate(0px, 0px);
-    transform: translate(0px, 0px);
-}
-
 /* ==========================================================================
 contact
 ========================================================================== */
@@ -842,154 +531,4 @@ contact
 #contact-info h2,
 #contact-info a {
   color: #3f6184;
-}
-/* ==========================================================================
-Footer
-========================================================================== */
-footer {
-    padding: 100px 0
-}
-footer p {
-    color: #c7cacc;
-    font-size: 12px;
-}
-footer ul {
-    margin-top: 30px
-}
-footer li {
-    float: left;
-    margin-right: 15%;
-    list-style: none;
-    text-transform: uppercase;
-    font-weight: 400;
-}
-footer li a {
-    color: #3f6184
-}
-footer li:last-child {
-    margin-right: 0
-}
-
-/* ==========================================================================
-Nav Overlay
-========================================================================== */
-/* Overlay style */
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(52, 82, 113, 0.95);
-}
-
-/* Menu style */
-.overlay nav {
-    position: relative;
-    top: 50%;
-    height: 60%;
-    text-align: center;
-    font-size: 54px;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-}
-.overlay ul {
-    position: relative;
-    display: inline-block;
-    margin: 0 auto;
-    padding: 0;
-    list-style: none;
-}
-.overlay ul li {
-    display: block;
-    float: left;
-    margin-right: 20px;
-}
-.overlay ul li:last-child {
-    margin-right: 0px
-}
-.overlay ul li i {
-    display: block;
-    margin-bottom: 10px;
-    font-size: 40px;
-}
-.overlay ul li a {
-    display: block;
-    padding: 50px 0;
-    min-width: 190px;
-    border: 2px solid #fff;
-    border-radius: 3px;
-    background-color: #345271;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 15px;
-    -webkit-transition: all 300ms ease-in-out;
-    transition: all 300ms ease-in-out;
-}
-.overlay ul li a:hover, .overlay ul li a:focus {
-    border-color: #73d0da;
-    color: #73d0da;
-}
-
-/* Effects */
-.overlay-boxify {
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
-    transition: opacity 0.5s, visibility 0s 0.5s;
-}
-.overlay-boxify.open {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transition: opacity 0.5s;
-    transition: opacity 0.5s;
-}
-.overlay-boxify nav ul li {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -80px, 0);
-    transform: translate3d(0, -80px, 0);
-    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s;
-}
-.overlay-boxify.open nav ul:first-child li:first-child {
-    -webkit-transition-delay: 0.05s;
-    transition-delay: 0.05s;
-}
-.overlay-boxify.open nav ul:first-child li:nth-child(2) {
-    -webkit-transition-delay: 0.1s;
-    transition-delay: 0.1s;
-}
-.overlay-boxify.open nav ul:nth-child(2) li:first-child {
-    -webkit-transition-delay: 0.15s;
-    transition-delay: 0.15s;
-}
-.overlay-boxify.open nav ul:nth-child(2) li:nth-child(2) {
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s;
-}
-.overlay-boxify.open nav ul li {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-
-/* ==========================================================================
-Waypoints
-========================================================================== */
-.wp1, .wp2, .wp3, .wp4, .wp5, .wp6 {
-    visibility: hidden
-}
-.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .bounceInDown {
-    visibility: visible
-}
-.delay-05s {
-    -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s;
-}
-.delay-1s {
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
 }
