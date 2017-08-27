@@ -461,16 +461,24 @@ flex
 ========================================================================== */
 .flex{
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .flex--col{
-  flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
 }
 .flex--center{
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .flex--align{
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+              -ms-grid-row-align: flex-start;
+          align-items: flex-start;
 }
 
 /* ==========================================================================
@@ -509,6 +517,7 @@ Hero
 }
 .hero h1 {
     font-weight: 300;
+    font-size: 48px;
     font-size: 3rem;
     background-color: rgba(255, 255, 255, 0.51);
 }
@@ -516,10 +525,12 @@ Hero
 .hero h3 {
     font-weight: 400;
     text-align: center;
+    font-size: 24px;
     font-size: 1.5rem;
     color: #fff;
 }
 .hero h2{
+  font-size: 32px;
   font-size: 2rem;
   color: rgba(255,255,255,1);
 }
