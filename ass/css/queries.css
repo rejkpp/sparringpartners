@@ -46,6 +46,11 @@
 	  bottom: 0px;
 		right:0px;
 	}
+	.hero h1 {
+	    font-size: 32px;
+	    font-size: 2rem;
+	    background-color: rgba(255, 255, 255, 0.51);
+	}
 }
 @media screen and (min-width: 768px){
 	.hero-footer{
