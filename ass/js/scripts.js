@@ -23,24 +23,6 @@ $(document).ready(function() {
 		offset: '75%'
 	});
 
-	/***************** Flickity ******************/
-
-	$('#servicesSlider').flickity({
-		cellAlign: 'left',
-		contain: true,
-		prevNextButtons: false
-	});
-
-	$('#showcaseSlider').flickity({
-		cellAlign: 'left',
-		contain: true,
-		prevNextButtons: false,
-		imagesLoaded: true
-	});
-
-	/***************** Fancybox ******************/
-
-
 });
 
 
