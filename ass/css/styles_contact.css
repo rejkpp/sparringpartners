@@ -501,6 +501,7 @@ Hero
 }
 .hero {
     position: relative;
+    padding: 5px 0 0 0;
     min-height: 100vh;
     background: url('../img/fano_hero_1920x1080.jpg') no-repeat right center;
     background-size: cover;
