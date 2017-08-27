@@ -670,7 +670,6 @@ services Slider
 .services-slider {
     position: relative;
     padding: 5%;
-    height: 400px;
     background-color: #3F6184;
 }
 .services-slider ul {
