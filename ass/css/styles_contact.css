@@ -657,7 +657,7 @@ Buttons
 ========================================================================== */
 .use-btn {
     display: inline-block;
-    /*margin: 0 10px 10px 0;*/
+    margin: 0 15px 15px 0;
     padding: 20px 50px;
     border-radius: 3px;
     background-color: #fff;
