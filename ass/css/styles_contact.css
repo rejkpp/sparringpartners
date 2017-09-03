@@ -486,8 +486,8 @@ Navigation
 ========================================================================== */
 .nav-toggle {
     position: absolute;
-    top: 0;
-    right: 50vw;
+    top: 15px;
+    right: 50%;
     z-index: 999999;
     padding: 10px 35px 16px 0px;
     cursor: pointer;
@@ -502,7 +502,7 @@ Navigation
     width: 35px;
     height: 5px;
     border-radius: 1px;
-    background: #204497;
+    background: #828282;
     cursor: pointer;
 }
 .nav-toggle span:before {
