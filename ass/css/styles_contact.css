@@ -525,6 +525,7 @@ Navigation
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+    background: #fff;
 }
 .nav-toggle.active span:after {
     top: 10px;
