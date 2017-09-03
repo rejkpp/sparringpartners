@@ -51,4 +51,9 @@
 	#contact-info {
 	  width: 51%;
 	}
+	.nav-toggle {
+	    position: absolute;
+	    top: -55px;
+	    right: 50vw;
+		}
 }
