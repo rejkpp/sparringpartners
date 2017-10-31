@@ -36,7 +36,7 @@ $(".nav-toggle").click(function() {
 });
 
 /* When user clicks a link */
-$(".overlay nav ul li a").click(function() {
+$(".overlay ul li a").click(function() {
 	$(".nav-toggle").toggleClass("active");
 	$(".overlay-boxify").toggleClass("open");
 });
